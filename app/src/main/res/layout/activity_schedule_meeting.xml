@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleMeetingActivity">
+
+    <include
+        android:id="@+id/maintoolbar_layout"
+        layout="@layout/toolbarlayout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/maintoolbar_layout"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/meetingdate_btn_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_sq_bg"
+        android:textSize="@dimen/hint_textsize"
+        android:hint="@string/meeting_date"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:drawableEnd="@drawable/down_arrrow"
+        android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/starttime_btn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_sq_bg"
+            android:textSize="@dimen/hint_textsize"
+            android:hint="@string/start_time"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:drawableEnd="@drawable/down_arrrow"
+            android:layout_below="@+id/meetingdate_btn_tv"/>
+
+        <TextView
+            android:id="@+id/endtime_btn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_sq_bg"
+            android:textSize="@dimen/hint_textsize"
+            android:hint="@string/end_time"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawableEnd="@drawable/down_arrrow"
+            android:layout_below="@+id/starttime_btn_tv"/>
+
+        <EditText
+            android:id="@+id/desc_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_sq_bg"
+            android:layout_below="@+id/endtime_btn_tv"
+            android:minLines="3"
+            android:padding="16dp"
+            android:gravity="start"
+            android:hint="@string/description"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/submitbtn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/colorprimary_btn_bg"
+            android:layout_below="@+id/desc_et"
+            android:text="@string/submit"
+            android:textSize="@dimen/heading_textsize"
+            android:textColor="@color/whiteColor"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

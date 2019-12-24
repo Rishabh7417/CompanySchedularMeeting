@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/maintoolbar_layout"
+        layout="@layout/toolbarlayout"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/meetingListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/maintoolbar_layout"/>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_gray">
+
+    <TextView
+        android:id="@+id/schedulebtn_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/schedule_company_meeting_text"
+        android:textSize="@dimen/heading_textsize"
+        android:textColor="@color/whiteColor"
+        android:background="@drawable/colorprimary_btn_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="42sp"
+        android:layout_height="42sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

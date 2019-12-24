@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/previous_btn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prev_text"
+        android:textSize="@dimen/toolbar_textsize"
+        android:textColor="@color/whiteColor"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/left_arrow"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/next_btn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_text"
+        android:textSize="@dimen/toolbar_textsize"
+        android:textColor="@color/whiteColor"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:drawableEnd="@drawable/right_arrow"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_head_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteColor"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/toolbar_textsize"
+        android:textStyle="bold"
+        tools:text="23-12-2019"/>
+
+
+</RelativeLayout>
